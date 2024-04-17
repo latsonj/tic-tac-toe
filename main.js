@@ -11,3 +11,22 @@ let gameBoard = (function() {
 })();
 
 console.log(gameBoard);
+
+function createPlayer(name, marker) {
+  return {
+    name,
+    marker,
+  }  
+}
+
+let tom = createPlayer("Tom", "X");
+console.log(tom);
+
+let bob = createPlayer("Bob", "O");
+console.log(bob);
+
+let julie = createPlayer("Julie", "#");
+console.log(julie);
+
+let jill = createPlayer("Jill", "$");
+console.log(jill);
